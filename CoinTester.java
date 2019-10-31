@@ -6,8 +6,8 @@ public class CoinTester{
     Coin myCoin = new Coin();
     Coin yourCoin = new Coin();
     Coin aCoin;
-    double heads = 0;
-    double tails = 0;
+    int heads = 0;
+    int tails = 0;
 
     System.out.println("My Coin = " + myCoin.toString());
     System.out.println("Your Coin = " + yourCoin.toString());
@@ -21,7 +21,7 @@ public class CoinTester{
         tails++;
       }
     }
-    double percentage = (heads/(heads+tails)) * 100;
+    double percentage = (heads/(double)(heads+tails)) * 100;
     System.out.print("In those flips, "+ percentage+"% were heads\n");
     System.out.print(heads+"-heads:"+tails+"-tails");
   }
