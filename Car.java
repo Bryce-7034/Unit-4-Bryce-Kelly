@@ -39,6 +39,9 @@ public class Car{
   public double getFuelCap(){
     return fuelCap;
   }
+  public String getOrigModel(){
+    return origModel;
+  }
 
 
   public void setFuel(double newFuel){
