@@ -1,7 +1,9 @@
 public class Car{
   private double fuel;
   private double fuelCap;
-  private double mpg;  //miles per gallon
+  private double mpg;  //miles per gallon'
+  private double x;
+  private double y;
   private String make;
   private String model;
   private double origFuel;
@@ -50,11 +52,40 @@ public class Car{
 
 
 
-  public void drive(int miles){
+  public void driveLeft(double miles){
     if (fuel - (miles/mpg) > 0){
       fuel = fuel - (miles/mpg);
+      x = x - miles;
     }else if (fuel - (miles/mpg) <= 0){
       fuel = 0;
+      System.out.println("You ran out of gas");
+    }
+  }
+  public void driveRight(double miles){
+    if (fuel - (miles/mpg) > 0){
+      fuel = fuel - (miles/mpg);
+      x = x + miles;
+    }else if (fuel - (miles/mpg) <= 0){
+      fuel = 0;
+      System.out.println("You ran out of gas");
+    }
+  }
+  public void driveUp(double miles){
+    if (fuel - (miles/mpg) > 0){
+      fuel = fuel - (miles/mpg);
+      y = y + miles;
+    }else if (fuel - (miles/mpg) <= 0){
+      fuel = 0;
+      System.out.println("You ran out of gas");
+    }
+  }
+  public void driveDown(double miles){
+    if (fuel - (miles/mpg) > 0){
+      fuel = fuel - (miles/mpg);
+      y = y - miles;
+    }else if (fuel - (miles/mpg) <= 0){
+      fuel = 0;
+      System.out.println("You ran out of gas");
     }
   }
   public void addFuel(double addedFuel){
@@ -62,10 +93,12 @@ public class Car{
       fuel = fuel + addedFuel;
     } else{
       fuel = fuelCap;
+      System.out.println("You tried to add too much fuel");
     }
   }
 
   public void crash(){
+    System.out.println("You crashed your car");
     model = model+"-broken-";
     mpg = (mpg*1.5);
     fuel = 0;
@@ -73,10 +106,13 @@ public class Car{
   }
   public void repair(){
     if (fuelCap == origFuelCap/2){
+      System.out.println("You fixed your car");
       model = origModel;
       mpg = origMpg;
       fuel = origFuelCap;
       fuelCap = origFuelCap;
+    } else{
+      System.out.println("There is nothing to fix");
     }
   }
   public String toString(){
