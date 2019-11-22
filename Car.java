@@ -23,6 +23,10 @@ public class Car{
     origMpg = carMpg;
     origFuelCap = carFuelCap;
     origFuel = carFuelCap;
+    if (make.equals("Honda") && model.equals("Civic")){
+      make = "Lawn";
+      model = "Mower";
+    }
   }
 
 
@@ -44,6 +48,12 @@ public class Car{
   public String getOrigModel(){
     return origModel;
   }
+  public double getx(){
+    return x;
+  }
+  public double gety(){
+    return y;
+  }
 
 
   public void setFuel(double newFuel){
@@ -56,7 +66,10 @@ public class Car{
     if (fuel - (miles/mpg) > 0){
       fuel = fuel - (miles/mpg);
       x = x - miles;
+      System.out.println("x: "+x+", y: "+y);
+      System.out.println("fuel remaining: "+ fuel);
     }else if (fuel - (miles/mpg) <= 0){
+      x = x-(fuel*mpg);
       fuel = 0;
       System.out.println("You ran out of gas");
     }
@@ -65,7 +78,10 @@ public class Car{
     if (fuel - (miles/mpg) > 0){
       fuel = fuel - (miles/mpg);
       x = x + miles;
+      System.out.println(x+", "+y);
+      System.out.println("fuel remaining: "+ fuel);
     }else if (fuel - (miles/mpg) <= 0){
+      x = x+(fuel*mpg);
       fuel = 0;
       System.out.println("You ran out of gas");
     }
@@ -74,7 +90,10 @@ public class Car{
     if (fuel - (miles/mpg) > 0){
       fuel = fuel - (miles/mpg);
       y = y + miles;
+      System.out.println(x+", "+y);
+      System.out.println("fuel remaining: "+ fuel);
     }else if (fuel - (miles/mpg) <= 0){
+      y = y+(fuel*mpg);
       fuel = 0;
       System.out.println("You ran out of gas");
     }
@@ -83,7 +102,10 @@ public class Car{
     if (fuel - (miles/mpg) > 0){
       fuel = fuel - (miles/mpg);
       y = y - miles;
+      System.out.println(x+", "+y);
+      System.out.println("fuel remaining: "+ fuel);
     }else if (fuel - (miles/mpg) <= 0){
+      y = y-(fuel*mpg);
       fuel = 0;
       System.out.println("You ran out of gas");
     }
@@ -100,7 +122,7 @@ public class Car{
   public void crash(){
     System.out.println("You crashed your car");
     model = model+"-broken-";
-    mpg = (mpg*1.5);
+    mpg = (mpg/1.5);
     fuel = 0;
     fuelCap = fuelCap / 2;
   }
@@ -118,10 +140,11 @@ public class Car{
   public String toString(){
     String result = "";
     result += "Make: "+ make;
-    result += "Model: "+ model +"\n";
+    result += " Model: "+ model +"\n";
     result += "MPG: "+ mpg +"\n";
     result += "Tank Size: "+ fuelCap +"\n";
-    result += "Current fuel in Tank " + fuel;
+    result += "Current fuel in Tank " + fuel +"\n";
+    result += "x: "+ x +", y: "+y+"\n";
     return result;
   }
 }
