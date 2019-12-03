@@ -12,6 +12,14 @@ public class Car{
   private String origMake;
   private String origModel;
 
+  public Car(){
+    make = "";
+    model = "";
+    mpg = 0;
+    fuelCap = 0;
+    fuel = 0;
+  }
+
   public Car(String carMake, String carModel, double carMpg, double carFuelCap){
     make = carMake;
     model = carModel;

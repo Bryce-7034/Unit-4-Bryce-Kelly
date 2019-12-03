@@ -4,15 +4,15 @@ public class Sim5{
   public static void main(String[]args){
     Scanner scan = new Scanner(System.in);
     Scanner scan2 = new Scanner(System.in);
-    Car Car = new Car("---", "---", 0, 0);
-    BankAccount account;
+    Car Car = new Car();
+    BankAccount account = new BankAccount("","",0);
     boolean play = true;
     boolean drive = true;
     double miles;
     String make;
     String model;
-    String username;
-    String password;
+    String username = "mnbvfghjkjhyujhgfrtyuiki876tgni876yujki87ytr43edfcvcdswertyutredfgguritfytidurs7aexucgvpgutju765rfghjijhg";
+    String password = "yyhjmnbvcxdertyuytredcvbnbvbnmjuytrertyuijmnjkioplkjkiuytrdsaqwsxcvfrertyuikjhjmnbju6546789oijhy65rfdser";
     double fuelCap = 0.0;
     double mpg;
     int crash = 0;
@@ -20,6 +20,7 @@ public class Sim5{
     double gasx = (int)(Math.random()*100-50);
     double gasy = (int)(Math.random()*100-50);
     int bankAccount = 0;
+    double startMoney;
     while (play){
       //System.out.println(Car.getx()+", "+Car.gety());
       //System.out.println(gasx+", "+gasy);
@@ -30,6 +31,7 @@ public class Sim5{
       +"Drive -- 3\n"
       +"Get Gas -- 4\n"
       +"Repair -- 5\n"
+      +"Manage Bank -- 6\n"
       +"End -- 10\n");
       int action = 0;
       if (scan.hasNextInt()){action = scan.nextInt();}
@@ -59,7 +61,9 @@ public class Sim5{
         username = scan.nextLine();
         System.out.println("What is your password");
         password = scan.nextLine();
-        account = new BankAccount(username, password, 0);
+        System.out.println("What is your starting money");
+        startMoney = scan.nextDouble();
+        account = new BankAccount(username, password, startMoney);
         action = 0;
       }
       while (action == 3 && haveCar == 1){
@@ -109,6 +113,38 @@ public class Sim5{
       while (action == 5 && haveCar == 1){
         Car.repair();
         crash = 0;
+        action = 0;
+      }
+      while (action == 6 && bankAccount == 1){
+        boolean banker = true;
+        System.out.print("What is the username\n");
+        String inputUsername = scan.nextLine();
+        System.out.print("What is the password\n");
+        String inputPassword = scan.nextLine();
+        while(inputPassword.equals(password) && inputUsername.equals(username) && banker){
+          System.out.print("What would you like to do"
+          +"Deposit money -- 1"
+          +"Withdraw money -- 2"
+          +"Check Status -- 3"
+          +"Log out -- 4");
+          int bankact = scan.nextInt();
+          if (bankact == 1){
+            System.out.println("How much do you want to deposit");
+            double depositamt = scan.nextDouble();
+            account.deposit(depositamt);
+          }
+          if (bankact == 2){
+            System.out.println("How much do you want to withdraw");
+            double withdrawamt = scan.nextDouble();
+            account.withdraw(withdrawamt);
+          }
+          if (bankact == 3){
+            System.out.println(account.toString());
+          }
+          if (bankact == 4){
+            banker = false;
+          }
+        }
         action = 0;
       }
       while (action == 10){
