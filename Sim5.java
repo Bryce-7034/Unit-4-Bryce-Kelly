@@ -11,8 +11,8 @@ public class Sim5{
     double miles;
     String make;
     String model;
-    String username = "mnbvfghjkjhyujhgfrtyuiki876tgni876yujki87ytr43edfcvcdswertyutredfgguritfytidurs7aexucgvpgutju765rfghjijhg";
-    String password = "yyhjmnbvcxdertyuytredcvbnbvbnmjuytrertyuijmnjkioplkjkiuytrdsaqwsxcvfrertyuikjhjmnbju6546789oijhy65rfdser";
+    String username = "mnbvfghjk12345678jhyujhgfrtyuiki876tgni876yujki87ytr43edfcvcdswertyutcgtruchdyrefdfgguritfytidurs7aexucgvpgutju765rfghjijhg";
+    String password = "yyhjmnbvcxdertyuytredcvbnbvbnmjuy12345678trertyuijmnjkioplkjkigyfvuytrdsgmdaijijqwsxcvfrertyuikjhjmnbju6546789oijhy65rfdser";
     double fuelCap = 0.0;
     double mpg;
     int crash = 0;
@@ -32,6 +32,7 @@ public class Sim5{
       +"Get Gas -- 4\n"
       +"Repair -- 5\n"
       +"Manage Bank -- 6\n"
+      +"Gamble -- 7\n"
       +"End -- 10\n");
       int action = 0;
       if (scan.hasNextInt()){action = scan.nextInt();}
@@ -88,12 +89,12 @@ public class Sim5{
           System.out.println("How many miles do you want to drive");
           miles = scan2.nextDouble();
           scan2.nextLine();
-          if (direction == 1){Car.driveRight(miles);scan.nextLine();}
-          if (direction == 2){Car.driveLeft(miles);scan.nextLine();}
-          if (direction == 3){Car.driveUp(miles);scan.nextLine();}
-          if (direction == 4){Car.driveDown(miles);scan.nextLine();}
+          if (direction == 1){Car.driveRight(miles);scan.nextLine();account.intrest();}
+          if (direction == 2){Car.driveLeft(miles);scan.nextLine();account.intrest();}
+          if (direction == 3){Car.driveUp(miles);scan.nextLine();account.intrest();}
+          if (direction == 4){Car.driveDown(miles);scan.nextLine();account.intrest();}
           crash = (int)(Math.random()*77+1);
-          if (crash == 1 && (direction == 1 || direction == 2 || direction == 3 || direction == 4)){Car.crash();}
+          if (crash == 1 && (direction == 1 || direction == 2 || direction == 3 || direction == 4)){Car.crash();account.intrest();}
         }
         action = 0;
       }
@@ -132,18 +133,61 @@ public class Sim5{
             System.out.println("How much do you want to deposit");
             double depositamt = scan.nextDouble();
             account.deposit(depositamt);
+            account.intrest();
           }
           if (bankact == 2){
             System.out.println("How much do you want to withdraw");
             double withdrawamt = scan.nextDouble();
             account.withdraw(withdrawamt);
+            account.intrest();
           }
-          if (bankact == 3){
-            System.out.println(account.toString());
+          if (bankact == 3){System.out.println(account.toString());}
+          if (bankact == 4){banker = false;}
+        }
+        action = 0;
+      }
+      while (action == 7){
+        if(bankAccount == 1) {
+          System.out.print("How much do you want to Gamble");
+          double gambleamt;
+          if (scan.hasNextDouble()) {
+            gambleamt = scan.nextDouble();
+          } else {
+            System.out.println("Needs to be int");
+            continue;
           }
-          if (bankact == 4){
-            banker = false;
+          System.out.print("What form of Gambling would you like to do?\n"
+                  + "Dice -- 1\n"
+                  + "Coin -- 2\n");
+          int gambleAct = scan.nextInt();
+          while (gambleAct == 1) {
+            System.out.print("You need doubles to win, Chance: 16.7%");
+            Die dice1 = new Die();
+            Die dice2 = new Die();
+            if (dice1.getFace() == dice2.getFace()) {
+              System.out.println("Congrats, You Won!  You got: " + gambleamt);
+              account.deposit(gambleamt);
+            } else if (dice1.getFace() != dice2.getFace()) {
+              System.out.println("Sorry you lost");
+              account.pay(gambleamt);
+            }
           }
+          while (gambleAct == 2) {
+            System.out.println("You need three heads to win, Chance: 16.6%");
+            Coin coin = new Coin();
+            Coin coin2 = new Coin();
+            Coin coin3 = new Coin();
+            if (coin.isHead() && coin2.isHead() && coin3.isHead()) {
+              System.out.println("Congrats, You Won!  You got: " + gambleamt);
+              account.deposit(gambleamt);
+            } else if (!coin.isHead()) {
+              System.out.println("Sorry you lost");
+              account.pay(gambleamt);
+            }
+          }
+        }
+        else{
+          System.out.println("You need a Bank Account to Gamble");
         }
         action = 0;
       }

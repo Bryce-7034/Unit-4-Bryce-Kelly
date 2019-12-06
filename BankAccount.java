@@ -2,6 +2,7 @@ import java.text.DecimalFormat;
 public class BankAccount{
   private double moneyIn;
   private double moneyOut;
+  private double dept;
   private String accountUsername;
   private String accountPassword;
 
@@ -35,27 +36,43 @@ public class BankAccount{
     accountPassword = newPassword;
   }
   public void deposit(double addedAmt){
-    if (addedAmt <= moneyOut){
+    if (dept > 0){
+      if (addedAmt >= dept){
+        System.out.println("You Payed Off Your Dept");
+        dept = 0;
+        addedAmt = addedAmt - dept;
+      }
+    }
+    if (addedAmt <= moneyOut && addedAmt>0){
       moneyIn = moneyIn + addedAmt;
       moneyOut = moneyOut - addedAmt;
-    } else{
+    } else if(addedAmt> moneyOut){
       System.out.println("You don't have enough money");
       moneyIn = moneyIn + moneyOut;
       moneyOut = 0;
+    } else{
+      System.out.println("cannot deposit $0");
     }
   }
   public void withdraw(double withdrawnAmt){
-    if (withdrawnAmt <= moneyIn){
+    if (withdrawnAmt <= moneyIn && withdrawnAmt>0){
       moneyIn = moneyIn - withdrawnAmt;
       moneyOut = moneyOut + withdrawnAmt;
-    }else {
+    }else if(withdrawnAmt>moneyIn){
       System.out.println("You don't have the money");
       moneyOut = moneyOut + moneyIn;
       moneyIn = 0;
+    }else{
+      System.out.println("cannot withdraw $0");
     }
+  }
+  public void pay(double paymentAmount){
+    if (moneyOut < paymentAmount){dept = -(moneyOut - paymentAmount);}
+    else {moneyOut = (moneyOut - paymentAmount);}
   }
   public void intrest(){
     moneyIn = moneyIn * INTREST;
+    dept = dept * INTREST;
   }
   public void hacked(){
     moneyIn = 0;
