@@ -171,6 +171,7 @@ public class Sim5{
               System.out.println("Sorry you lost");
               account.pay(gambleamt);
             }
+            gambleAct = 0;
           }
           while (gambleAct == 2) {
             System.out.println("You need three heads to win, Chance: 16.6%");
@@ -184,6 +185,7 @@ public class Sim5{
               System.out.println("Sorry you lost");
               account.pay(gambleamt);
             }
+            gambleAct = 0;
           }
         }
         else{
@@ -191,9 +193,8 @@ public class Sim5{
         }
         action = 0;
       }
-      while (action == 10){
+      if (action == 10){
         play = false;
-        action = 0;
       }
     }
   }
