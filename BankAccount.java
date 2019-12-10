@@ -31,6 +31,7 @@ public class BankAccount{
   public String getUsername(){
     return accountUsername;
   }
+  public String getPassword(){return accountPassword;}
 
   public void resetPassword(String newPassword){
     accountPassword = newPassword;
