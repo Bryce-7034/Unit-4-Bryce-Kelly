@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ZombiePalyerPane">
+   <children>
+      <Label layoutX="251.0" layoutY="46.0" text="Number of players" />
+      <CheckBox fx:id="onePlayer" layoutX="215.0" layoutY="192.0" mnemonicParsing="false" onAction="#singlePlayer" text="1 Player" />
+      <CheckBox fx:id="twoPlayer" layoutX="314.0" layoutY="192.0" mnemonicParsing="false" onAction="#multiplayer" text="2 Player" />
+   </children>
+</AnchorPane>
