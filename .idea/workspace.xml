@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d268bc01-d5a9-4157-8f8a-7613426f0f68" name="Default Changelist" comment="Zombie dice">
-      <change afterPath="$PROJECT_DIR$/SinglePlayerPane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tester.java" afterDir="false" />
+    <list default="true" id="d268bc01-d5a9-4157-8f8a-7613426f0f68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Missile Alert.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Missile Alert.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NumberOfPlayers.java" beforeDir="false" afterPath="$PROJECT_DIR$/NumberOfPlayers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZombiePlayerPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/ZombiePlayerPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZombiePlayerPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZombiePlayerPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZombiePlayerUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZombiePlayerUi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Unit-4-Bryce-Kelly/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit-4-Bryce-Kelly/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Unit-4-Bryce-Kelly/Missile Alert.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit-4-Bryce-Kelly/Missile Alert.fxml" afterDir="false" />
     </list>
@@ -91,13 +84,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="fxml" value="2" />
-          <entry key="java" value="21" />
+          <entry key="java" value="22" />
           <entry key="json" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="21" />
+          <entry key="JAVA" value="22" />
           <entry key="JSON" value="1" />
           <entry key="XML" value="2" />
         </counts>
@@ -130,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ZombiePlayerPane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+            <state relative-caret-position="317">
+              <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,7 +132,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ZombiePlayerPane.fxml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -164,11 +157,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ZombiePlayerUi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="17" column="89" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="89" />
+            <state relative-caret-position="272">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -231,12 +224,12 @@
         <option value="$PROJECT_DIR$/NumberOfPlayers.java" />
         <option value="$PROJECT_DIR$/Tester.java" />
         <option value="$PROJECT_DIR$/ZombiePlayerPane.fxml" />
-        <option value="$PROJECT_DIR$/ZombiePlayerPane.java" />
         <option value="$PROJECT_DIR$/SinglePlayerPane.java" />
+        <option value="$PROJECT_DIR$/ZombiePlayerPane.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="669" />
     <option name="width" value="704" />
     <option name="height" value="745" />
@@ -262,7 +255,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576205595227" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576205645554" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -394,14 +387,20 @@
       <option name="project" value="LOCAL" />
       <updated>1576173263435</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Zombie dice">
+      <created>1576205609759</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576205609759</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3104113" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3104113" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -410,14 +409,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32884097" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32884097" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50064266" side_tool="true" weight="0.32884097" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32884097" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32884097" />
       <window_info anchor="bottom" id="Floobits" order="11" sideWeight="0.4993573" weight="0.32884097" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -492,13 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ZombieDieUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RandomDie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -569,13 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ZombiePlayerUi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="89" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Missile Alert.fxml">
       <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
@@ -597,16 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ZombiePlayerPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ZombiePlayerPane.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -614,6 +589,33 @@
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ZombieDieUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ZombiePlayerPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ZombiePlayerUi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
