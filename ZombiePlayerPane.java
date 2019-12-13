@@ -1,25 +1,31 @@
 import javafx.fxml.FXML;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.Button;
+
+import java.io.IOException;
 
 public class ZombiePlayerPane {
 
     @FXML
-    private CheckBox onePlayer;
+    private Button OnePlayer;
 
     @FXML
-    private CheckBox twoPlayer;
+    private Button TwoPlayer;
 
     @FXML
-    NumberOfPlayers singlePlayer(ActionEvent event) {
-        NumberOfPlayers num = new NumberOfPlayers(1);
-        return num;
+    void singlePlayer(ActionEvent event) throws IOException
+    {
+        Parent single = FXMLLoader.load(getClass().getResource("./SinglePlayerPane.fxml"));
+        OnePlayer.getScene().setRoot(single);
     }
 
     @FXML
-    NumberOfPlayers multiplayer(ActionEvent event) {
-        NumberOfPlayers num = new NumberOfPlayers(2);
-        return num;
+    void multiplayer(ActionEvent event) throws IOException{
+        Parent single = FXMLLoader.load(getClass().getResource("./MultiPlayerPane.fxml"));
+        TwoPlayer.getScene().setRoot(single);
     }
 
 
