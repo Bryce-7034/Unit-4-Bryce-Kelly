@@ -15,7 +15,7 @@ public class ZombiePlayerUi extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent menu = FXMLLoader.load(getClass().getResource("./ZombiePlayerPane.fxml"));
+        Parent menu = FXMLLoader.load(getClass().getResource("./ZombieDicePlaying.fxml"));
         scene = new Scene(menu);
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);

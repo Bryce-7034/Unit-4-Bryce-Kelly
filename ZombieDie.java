@@ -17,6 +17,9 @@ public class ZombieDie {
         return face;
     }
     public int getColor(){return color;}
+    public boolean isBrain(){return face == 1;}
+    public boolean isFoot(){return face == 2;}
+    public boolean isShot(){return face == 3;}
     public void rollGreen(){
         int chance = (int)Math.random()*6+1;
         if(chance == 1||chance==2||chance == 3){
