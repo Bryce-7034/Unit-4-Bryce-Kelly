@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('https://i.pinimg.com/originals/f1/4b/bf/f14bbf2c2425d69f52aa2e6acb4de74e.jpg');" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ZombieDicePlaying">
+   <children>
+      <Rectangle id="greenOne" fx:id="greenOne" arcHeight="5.0" arcWidth="5.0" fill="#29931e" height="25.0" layoutX="14.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+      <Rectangle id="greenTwo" fx:id="greenTwo" arcHeight="5.0" arcWidth="5.0" fill="#29931e" height="25.0" layoutX="53.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+      <Rectangle id="greenThree" fx:id="greenThree" arcHeight="5.0" arcWidth="5.0" fill="#29931e" height="25.0" layoutX="93.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+      <Rectangle id="greenFour" fx:id="greenFour" arcHeight="5.0" arcWidth="5.0" fill="#29931e" height="25.0" layoutX="132.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+      <Rectangle id="greenFive" fx:id="greenFive" arcHeight="5.0" arcWidth="5.0" fill="#29931e" height="25.0" layoutX="173.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+      <Rectangle id="greenSix" fx:id="greenSix" arcHeight="5.0" arcWidth="5.0" fill="#29931e" height="25.0" layoutX="212.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+      <Rectangle id="yellowOne" fx:id="yellowOne" arcHeight="5.0" arcWidth="5.0" fill="#e4e407" height="25.0" layoutX="14.0" layoutY="52.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+      <Rectangle id="yellowTwo" fx:id="yellowTwo" arcHeight="5.0" arcWidth="5.0" fill="#e4e407" height="25.0" layoutX="53.0" layoutY="52.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+      <Rectangle id="yellowThree" fx:id="yellowThree" arcHeight="5.0" arcWidth="5.0" fill="#e4e407" height="25.0" layoutX="93.0" layoutY="52.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+      <Rectangle id="yellowFour" fx:id="yellowFour" arcHeight="5.0" arcWidth="5.0" fill="#e4e407" height="25.0" layoutX="132.0" layoutY="52.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+      <Rectangle id="redOne" fx:id="redOne" arcHeight="5.0" arcWidth="5.0" fill="#ff1e1e" height="25.0" layoutX="14.0" layoutY="88.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+      <Rectangle id="redTwo" fx:id="redTwo" arcHeight="5.0" arcWidth="5.0" fill="#ff1e1e" height="25.0" layoutX="53.0" layoutY="88.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+      <Rectangle id="redThree" fx:id="redThree" arcHeight="5.0" arcWidth="5.0" fill="#ff1e1e" height="25.0" layoutX="93.0" layoutY="88.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+      <Rectangle id="die1" fx:id="die1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="78.0" layoutX="271.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+      <Rectangle id="die3" fx:id="die3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="78.0" layoutX="489.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+      <Rectangle id="die2" fx:id="die2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="78.0" layoutX="380.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+      <Label id="firstPlayer" fx:id="firstPlayer" layoutX="52.0" layoutY="216.0" text="First Player" textFill="WHITE" underline="true" />
+      <Label id="secondPlayer" fx:id="secondPlayer" layoutX="420.0" layoutY="216.0" text="Second Player" textFill="WHITE" underline="true" />
+      <Label id="turnScoreP1" fx:id="turnScoreP1" layoutX="240.0" layoutY="216.0" text="Turn Score:" textFill="WHITE" />
+      <Label id="finalScoreP1" fx:id="finalScoreP1" layoutX="10.0" layoutY="293.0" text="Final Score:" textFill="WHITE" />
+      <Label id="finalScoreP2" fx:id="finalScoreP2" layoutX="526.0" layoutY="293.0" text=":Final Score" textFill="WHITE" />
+      <Label id="turnResultP1" fx:id="turnResultP1" layoutX="79.0" layoutY="253.0" textFill="WHITE" />
+      <Label id="finalResultP1" fx:id="finalResultP1" layoutX="79.0" layoutY="293.0" text="p1 FS" textFill="WHITE" />
+      <Label id="finalResultP2" fx:id="finalResultP2" layoutX="489.0" layoutY="293.0" text="p2 FS" textFill="WHITE" />
+      <ImageView id="image1" fx:id="image1" fitHeight="78.0" fitWidth="80.0" layoutX="270.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView id="image2" fx:id="image2" fitHeight="78.0" fitWidth="80.0" layoutX="380.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView id="image3" fx:id="image3" fitHeight="78.0" fitWidth="80.0" layoutX="489.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
+      <Label id="shotsP1" fx:id="shotsP1" layoutX="11.0" layoutY="335.0" text="Shots:" textFill="WHITE" />
+      <Label id="shotResultP1" fx:id="shotResultP1" layoutX="80.0" layoutY="335.0" text="p1 NS" textFill="WHITE" />
+      <Label id="shotsP2" fx:id="shotsP2" layoutX="553.0" layoutY="335.0" text=":Shots" textFill="WHITE" />
+      <Label id="shotResultP2" fx:id="shotResultP2" layoutX="490.0" layoutY="335.0" text="p2 NS" textFill="WHITE" />
+      <Button id="endTurn" fx:id="endTurn" layoutX="259.0" layoutY="281.0" mnemonicParsing="false" onAction="#endPlayerTurn" text="End Turn" />
+      <Button fx:id="homeButton" layoutX="247.0" layoutY="344.0" mnemonicParsing="false" onAction="#backHome" text="Back to home" />
+      <Label fx:id="turnResult" layoutX="319.0" layoutY="216.0" prefHeight="17.0" prefWidth="0.0" text="#" textFill="WHITE" />
+      <Button fx:id="rollDie" layoutX="275.0" layoutY="241.0" mnemonicParsing="false" onAction="#rollDice" text="roll" visible="false" />
+      <Button fx:id="pickDie" layoutX="388.0" layoutY="129.0" mnemonicParsing="false" onAction="#pickDice" text="Pick Dice" />
+   </children>
+</AnchorPane>
