@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('https://www.nature.com/news/polopoly_fs/7.47250.1508772214!/image/26.10.17-Nature-Thriller-zombie-dance-illustration-cmyk.jpg_gen/derivatives/landscape_630/26.10.17-Nature-Thriller-zombie-dance-illustration-cmyk.jpg');" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ZombieController">
+   <children>
+      <Label layoutX="197.0" layoutY="81.0" text="Zombie Die" textFill="#d62222">
+         <font>
+            <Font name="Haettenschweiler" size="64.0" />
+         </font>
+      </Label>
+      <Button fx:id="play" layoutX="269.0" layoutY="280.0" mnemonicParsing="false" onAction="#startGame" text="Play" />
+   </children>
+</AnchorPane>
