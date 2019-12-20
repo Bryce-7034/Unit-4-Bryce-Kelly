@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d268bc01-d5a9-4157-8f8a-7613426f0f68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ZombieDicePlaying.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sim5.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sim5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZombieDicePlaying.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/ZombieDicePlaying.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZombieDicePlaying.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZombieDicePlaying.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ZombieDie.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZombieDie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZombiePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZombiePlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ZombiePlayerUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZombiePlayerUi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Unit-4-Bryce-Kelly/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit-4-Bryce-Kelly/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Unit-4-Bryce-Kelly/ZombieDicePlaying.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit-4-Bryce-Kelly/ZombieDicePlaying.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,35 +58,37 @@
     <session id="-307201179">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.110" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.84" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="fxml" value="18" />
-          <entry key="java" value="5142" />
+          <entry key="java" value="10388" />
           <entry key="txt" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5142" />
+          <entry key="JAVA" value="10388" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="XML" value="18" />
         </counts>
@@ -92,13 +96,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="fxml" value="3" />
-          <entry key="java" value="30" />
+          <entry key="java" value="31" />
           <entry key="json" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="30" />
+          <entry key="JAVA" value="31" />
           <entry key="JSON" value="1" />
           <entry key="XML" value="3" />
         </counts>
@@ -107,20 +111,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tester.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ZombiePlayerUi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+            <state relative-caret-position="34">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -134,21 +129,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ZombieDicePlaying.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1842">
-              <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            <state relative-caret-position="-5698">
+              <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ZombieDicePlaying.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="81" lean-forward="true" selection-start-line="10" selection-start-column="81" selection-end-line="10" selection-end-column="81" />
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="88" selection-start-line="24" selection-start-column="88" selection-end-line="24" selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -165,8 +163,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ZombieDie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+            <state relative-caret-position="1105">
+              <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+              <folding>
+                <element signature="e#93#94#0" expanded="true" />
+                <element signature="e#117#118#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -224,7 +226,6 @@
         <option value="$PROJECT_DIR$/CodeClass.java" />
         <option value="$PROJECT_DIR$/CodeTester.java" />
         <option value="$PROJECT_DIR$/Code.java" />
-        <option value="$PROJECT_DIR$/Sim5.java" />
         <option value="$PROJECT_DIR$/Test.java" />
         <option value="$PROJECT_DIR$/PigDice.java" />
         <option value="$PROJECT_DIR$/PigDie.java" />
@@ -238,16 +239,25 @@
         <option value="$PROJECT_DIR$/ZombiePlayerPane.fxml" />
         <option value="$PROJECT_DIR$/SinglePlayerPane.java" />
         <option value="$PROJECT_DIR$/ZombiePlayerPane.java" />
-        <option value="$PROJECT_DIR$/ZombieDie.java" />
         <option value="$PROJECT_DIR$/ZombiePlayer.java" />
         <option value="$PROJECT_DIR$/ZombieDicePane.java" />
         <option value="$PROJECT_DIR$/ZombiePlayerUi.java" />
+        <option value="$PROJECT_DIR$/ZombieDicePlaying.fxml" />
+        <option value="$PROJECT_DIR$/Sim5.java" />
+        <option value="$PROJECT_DIR$/ZombieDie.java" />
         <option value="$PROJECT_DIR$/ZombieDicePlaying.java" />
       </list>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="669" />
+    <option name="x" value="-133" />
+    <option name="y" value="72" />
     <option name="width" value="704" />
     <option name="height" value="745" />
   </component>
@@ -256,6 +266,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,12 +279,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576604824048" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576858738203" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -411,14 +421,28 @@
       <option name="project" value="LOCAL" />
       <updated>1576205609759</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Zombie dice">
+      <created>1576641981069</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1576641981069</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Zombie dice">
+      <created>1576642014599</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1576642014599</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13881747" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14460154" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -444,7 +468,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32969153" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -487,13 +511,6 @@
     </entry>
     <entry file="file://$USER_HOME$/.floorc.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sim5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2635">
-          <caret line="155" column="50" selection-start-line="155" selection-start-column="50" selection-end-line="155" selection-end-column="50" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -577,10 +594,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ZombiePlayerUi.java">
+    <entry file="file://$PROJECT_DIR$/Sim5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+        <state relative-caret-position="215">
+          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -591,17 +608,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Turns.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ZombieDie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+        <state relative-caret-position="1105">
+          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+          <folding>
+            <element signature="e#93#94#0" expanded="true" />
+            <element signature="e#117#118#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -630,18 +644,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ZombieDicePlaying.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/Turns.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="81" lean-forward="true" selection-start-line="10" selection-start-column="81" selection-end-line="10" selection-end-column="81" />
+        <state relative-caret-position="68">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ZombieDicePlaying.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="88" selection-start-line="24" selection-start-column="88" selection-end-line="24" selection-end-column="88" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZombieDicePlaying.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1842">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="-5698">
+          <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ZombiePlayerUi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>

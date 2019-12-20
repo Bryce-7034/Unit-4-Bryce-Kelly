@@ -14,7 +14,9 @@ public class ZombiePlayerUi extends Application {
     private Scene scene;
 
     @Override
+    //call the stage and throw an error
     public void start(Stage primaryStage) throws IOException {
+        //connect the Scene Builder screen as FXML file and set it as scene
         Parent menu = FXMLLoader.load(getClass().getResource("./ZombieDicePlaying.fxml"));
         scene = new Scene(menu);
         primaryStage.setScene(scene);

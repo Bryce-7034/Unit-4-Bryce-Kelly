@@ -11,8 +11,8 @@ public class Sim5{
     double miles;
     String make;
     String model;
-    String username = "mnbvfghjk12345678jhyujhgfrtyuiki876tgni876yujki87ytr43edfcvcdswertyutcgtruchdyrefdfgguritfytidurs7aexucgvpgutju765rfghjijhg";
-    String password = "yyhjmnbvcxdertyuytredcvbnbvbnmjuy12345678trertyuijmnjkioplkjkigyfvuytrdsgmdaijijqwsxcvfrertyuikjhjmnbju6546789oijhy65rfdser";
+    String username = "mnbvfghjk12345678jhyujhgfrtyuiki876tgni87xgfhgdfdghyrawtgzfbdhsrgdzbxncgcj6yujki87ytr43edfcvcdswertyutcgtruchdyrefdfgguritfytidurs7aexucgvpgutju765rfghjijhg";
+    String password = "yyhjmnbvcxdertyuytredcvbnbvbnmjuy12345678asdhfjgh;lkjghxmc,jvjhbntrertyuijmnjkioplkjkigyfvuytrdsgmdaijijqwsxcvfrertyuikjhjmnbju6546789oijhy65rfdser";
     double fuelCap = 0.0;
     double mpg;
     int crash = 0;
@@ -42,7 +42,7 @@ public class Sim5{
       if(action == 4 && haveCar == 0){System.out.println("you can't get gas, you have no car");scan.nextLine();}
       if(action == 5 && haveCar == 0){System.out.println("you can't repair what you dont have");scan.nextLine();}
       if(action == 2 && bankAccount == 1){System.out.println("You already have an account");scan.nextLine();}
-      while (action == 1 && (Car.getModel().equals("---") || crash == 1)){
+      while (action == 1|| crash == 1){
         haveCar = 0;
         System.out.println("What make do you want");
         make = scan2.nextLine();
@@ -123,11 +123,11 @@ public class Sim5{
         System.out.print("What is the password\n");
         String inputPassword = scan.nextLine();
         while(inputPassword.equals(password) && inputUsername.equals(username) && banker){
-          System.out.print("What would you like to do"
-          +"Deposit money -- 1"
-          +"Withdraw money -- 2"
-          +"Check Status -- 3"
-          +"Log out -- 4");
+          System.out.print("What would you like to do\n"
+          +"Deposit money -- 1\n"
+          +"Withdraw money -- 2\n"
+          +"Check Status -- 3\n"
+          +"Log out -- 4\n");
           int bankact = scan.nextInt();
           if (bankact == 1){
             System.out.println("How much do you want to deposit");
@@ -148,7 +148,7 @@ public class Sim5{
       }
       while (action == 7){
         if(bankAccount == 1) {
-          System.out.print("How much do you want to Gamble");
+          System.out.print("How much do you want to Gamble\n");
           double gambleamt;
           if (scan.hasNextDouble()) {
             gambleamt = scan.nextDouble();
@@ -161,7 +161,7 @@ public class Sim5{
                   + "Coin -- 2\n");
           int gambleAct = scan.nextInt();
           while (gambleAct == 1) {
-            System.out.print("You need doubles to win, Chance: 16.7%");
+            System.out.print("You need doubles to win, Chance: 16.7%\n");
             Die dice1 = new Die();
             Die dice2 = new Die();
             if (dice1.getFace() == dice2.getFace()) {
